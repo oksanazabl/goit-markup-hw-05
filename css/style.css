@@ -80,14 +80,13 @@ img {
   border-radius: 4px;
 }
 
-.nav-listitems:hover .link-icon,
-.nav-listitems:focus .link-icon {
+.address:hover .link-icon,
+.address:focus .link-icon {
   fill: var(--txt-bleu);
   color: var(--txt-bleu);
+  outline: none;
 }
 
-.nav-listitems:hover,
-.nav-listitems:focus,
 .link-items:hover,
 .link-items:focus,
 .address:hover,
@@ -97,6 +96,7 @@ img {
 .link-addres:focus,
 .link-addres:hover {
   color: var(--txt-bleu);
+  outline: none;
 }
 
 /*=========== END Common ===========*/
@@ -160,8 +160,10 @@ img {
 }
 
 .address {
+  display: flex;
   color: var(--txt-grey);
   font-weight: 500;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -487,12 +489,15 @@ img {
   margin-right: 10px;
 }
 
-.social-list-link:hover .social-list-icon {
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
   fill: var(--white);
 }
 
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: var(--accent-background);
+  outline: none;
 }
 
 /*==== CLIENT ====*/
@@ -514,14 +519,24 @@ img {
   border-radius: 4px;
 }
 
-.client-icon:focus .client-logo-icon,
-.client-icon:hover .client-logo-icon {
+.client-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.client-link:focus .client-logo-icon,
+.client-link:hover .client-logo-icon {
   fill: var(--accent-background);
 }
 
-.client-icon:focus,
-.client-icon:hover {
+.client-link:focus,
+.client-link:hover {
   border: 1px solid var(--accent-background);
+  outline: none;
 }
 
 .client-logo-icon {
@@ -568,10 +583,12 @@ img {
   padding: 6px 22px;
 }
 
-.btn-portfolio:hover {
+.btn-portfolio:hover,
+.btn-portfolio:focus {
   background-color: var(--b-blue);
   color: var(--txt-light);
   border: none;
+  outline: none;
 }
 
 .work-example {
@@ -587,13 +604,18 @@ img {
   margin-bottom: 30px;
   box-sizing: border-box;
   border-radius: 0px 0px 4px 4px;
-  position: relative;
-  overflow: hidden;
 }
 
-.portfolio-card:hover {
+.ecxample-card {
+  display: block;
+}
+
+.ecxample-card:hover,
+.ecxample-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-card:nth-child(3n) {
@@ -642,36 +664,3 @@ img {
   color: var(--txt-grey);
   margin-top: 4px;
 }
-
-/*modal-portfolio*/
-
-.portfolio-card:hover .overlay {
-  transform: translatex(0);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #3f51b5;
-
-  transform: translatex(-100%);
-  transition: transform 250ms ease;
-}
-
-/*.overlay > p {
-  color: #fff;
-  padding: 10px;
-  margin: 0;
-  font-size: 18px;
-}
-
-.overlay code {
-  display: inline-block;
-  padding: 2px 4px;
-  border-radius: 2px;
-  background-color: #fff;
-  color: #2a2a2a;
-}*/
