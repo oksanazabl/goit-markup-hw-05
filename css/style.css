@@ -89,12 +89,12 @@ img {
 
 .link-items:hover,
 .link-items:focus,
-.address:hover,
-.address:focus,
 .link-contact:hover,
 .link-contact:focus,
+.link-addres:hover,
 .link-addres:focus,
-.link-addres:hover {
+.address:hover,
+.address:focus {
   color: var(--txt-bleu);
   outline: none;
 }
@@ -515,8 +515,6 @@ img {
   justify-content: center;
   width: 170px;
   height: 90px;
-  border: 1px solid var(--light);
-  border-radius: 4px;
 }
 
 .client-link {
@@ -526,6 +524,8 @@ img {
   align-items: center;
   justify-content: center;
   margin: auto;
+  border: 1px solid var(--light);
+  border-radius: 4px;
 }
 
 .client-link:focus .client-logo-icon,
