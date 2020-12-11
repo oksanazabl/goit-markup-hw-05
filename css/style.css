@@ -88,15 +88,18 @@ img {
 }
 
 .link-items:hover,
-.link-items:focus,
 .link-contact:hover,
-.link-contact:focus,
 .link-addres:hover,
+.address:hover {
+  color: var(--txt-bleu);
+}
+
+.link-items:focus,
+.link-contact:focus,
 .link-addres:focus,
-.address:hover,
 .address:focus {
   color: var(--txt-bleu);
-  outline: none;
+  outline: 1px solid #757575;
 }
 
 /*=========== END Common ===========*/
@@ -494,10 +497,13 @@ img {
   fill: var(--white);
 }
 
-.social-list-link:hover,
+.social-list-link:hover {
+  background-color: var(--accent-background);
+}
+
 .social-list-link:focus {
   background-color: var(--accent-background);
-  outline: none;
+  outline: 1px solid #757575;
 }
 
 /*==== CLIENT ====*/
@@ -533,10 +539,13 @@ img {
   fill: var(--accent-background);
 }
 
-.client-link:focus,
 .client-link:hover {
   border: 1px solid var(--accent-background);
-  outline: none;
+}
+
+.client-link:focus {
+  border: 1px solid var(--accent-background);
+  outline: 1px solid #757575;
 }
 
 .client-logo-icon {
@@ -583,12 +592,17 @@ img {
   padding: 6px 22px;
 }
 
-.btn-portfolio:hover,
+.btn-portfolio:hover {
+  background-color: var(--b-blue);
+  color: var(--txt-light);
+  border: none;
+}
+
 .btn-portfolio:focus {
   background-color: var(--b-blue);
   color: var(--txt-light);
   border: none;
-  outline: none;
+  outline: 1px solid #757575;
 }
 
 .work-example {
@@ -610,11 +624,17 @@ img {
   display: block;
 }
 
-.ecxample-card:hover,
+.ecxample-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  border-radius: 0px 0px 4px 4px;
+}
+
 .ecxample-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: none;
+  outline: 1px solid #757575;
   border-radius: 0px 0px 4px 4px;
 }
 
