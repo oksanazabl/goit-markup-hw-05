@@ -404,6 +404,10 @@ img {
   padding-top: 94px;
 }
 
+/*=========== END about ===========*/
+
+/*=========== our work ===========*/
+
 .item-box {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -422,6 +426,34 @@ img {
 .picture:not(:last-child) {
   margin-right: 30px;
 }
+
+.picture {
+  position: relative;
+}
+
+.shadow-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.shadow-text-descript {
+  color: var(--txt-light);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/*=========== END our work ===========*/
 
 /*==== TEAM ====*/
 
@@ -708,12 +740,12 @@ img {
 }
 
 .backdrop.is-hidden {
-  transition: all 250ms var(--timer) 250ms;
+  transition: all 250ms var(--timer);
 }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 250ms var(--timer) 250ms;
+  transition: transform var(--timer) 250ms;
 }
 
 .modal {
@@ -725,7 +757,7 @@ img {
   min-height: 581px;
   background-color: #fff;
 
-  transition: transform 250ms var(--timer) 250ms;
+  transition: transform var(--timer) 250ms;
 }
 
 .close-btn {
