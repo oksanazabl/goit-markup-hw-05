@@ -155,6 +155,7 @@ img {
   letter-spacing: 0.02em;
   display: flex;
 }
+
 .nav-listitems:not(:last-child) {
   margin-right: 50px;
 }
@@ -191,6 +192,18 @@ img {
 
 .accent {
   color: var(--txt-bleu);
+  position: relative;
+}
+
+a.accent::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 45px;
+  border-radius: 4px;
+
+  background-color: var(--b-blue);
 }
 
 /*=========== END header ===========*/
@@ -668,15 +681,12 @@ img {
 .ecxample-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
-  border-radius: 0px 0px 4px 4px;
 }
 
 .ecxample-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: 1px solid #757575;
-  border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-card:nth-child(3n) {
@@ -692,6 +702,7 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
 
   border-right-width: 1px;
   border-right-style: solid;
@@ -726,6 +737,34 @@ img {
   margin-top: 4px;
 }
 
+.overlay-box {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  background: rgba(33, 150, 243, 0.9);
+  color: var(--txt-light);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 250ms var(--timer);
+}
+
+.ecxample-card:hover .overlay,
+.ecxample-card:focus .overlay {
+  transform: translateY(0);
+}
+
 /* =============== BACKDROP ===============*/
 .backdrop {
   position: fixed;
@@ -745,7 +784,7 @@ img {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
-  transition: transform var(--timer) 250ms;
+  transition: opacity 250ms var(--timer);
 }
 
 .modal {
@@ -757,7 +796,7 @@ img {
   min-height: 581px;
   background-color: #fff;
 
-  transition: transform var(--timer) 250ms;
+  transition: transform 250ms var(--timer);
 }
 
 .close-btn {
