@@ -87,6 +87,8 @@ img {
   fill: var(--txt-bleu);
   color: var(--txt-bleu);
   outline: none;
+
+  transition: transform 250ms var(--timer);
 }
 
 .link-items:hover,
@@ -94,6 +96,8 @@ img {
 .link-addres:hover,
 .address:hover {
   color: var(--txt-bleu);
+
+  transition: transform 250ms var(--timer);
 }
 
 .link-items:focus,
@@ -337,11 +341,13 @@ a.accent::after {
 .btn-hero:hover {
   color: var(--txt-dark);
   cursor: pointer;
+  transition: transform 250ms var(--timer);
 }
 
 .btn-hero:focus {
   color: var(--txt-dark);
   cursor: pointer;
+  transition: transform 250ms var(--timer);
 }
 /*=========== END hero ===========*/
 
@@ -548,15 +554,21 @@ a.accent::after {
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--white);
+
+  transition: transform 250ms var(--timer);
 }
 
 .social-list-link:hover {
   background-color: var(--accent-background);
+
+  transition: transform 250ms var(--timer);
 }
 
 .social-list-link:focus {
   background-color: var(--accent-background);
   outline: 1px solid #757575;
+
+  transition: transform 250ms var(--timer);
 }
 
 /*==== CLIENT ====*/
@@ -590,15 +602,21 @@ a.accent::after {
 .client-link:focus .client-logo-icon,
 .client-link:hover .client-logo-icon {
   fill: var(--accent-background);
+
+  transition: transform 250ms var(--timer);
 }
 
 .client-link:hover {
   border: 1px solid var(--accent-background);
+
+  transition: transform 250ms var(--timer);
 }
 
 .client-link:focus {
   border: 1px solid var(--accent-background);
   outline: 1px solid #757575;
+
+  transition: transform 250ms var(--timer);
 }
 
 .client-logo-icon {
@@ -650,6 +668,8 @@ a.accent::after {
   color: var(--txt-light);
   border: none;
   cursor: pointer;
+
+  transition: transform 250ms var(--timer);
 }
 
 .btn-portfolio:focus {
@@ -657,6 +677,8 @@ a.accent::after {
   color: var(--txt-light);
   border: none;
   outline: 1px solid #757575;
+
+  transition: transform 250ms var(--timer);
 }
 
 .work-example {
@@ -681,12 +703,16 @@ a.accent::after {
 .ecxample-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  transition: transform 250ms var(--timer);
 }
 
 .ecxample-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: 1px solid #757575;
+
+  transition: transform 250ms var(--timer);
 }
 
 .portfolio-card:nth-child(3n) {
@@ -763,6 +789,8 @@ a.accent::after {
 .ecxample-card:hover .overlay,
 .ecxample-card:focus .overlay {
   transform: translateY(0);
+
+  transition: transform 250ms var(--timer);
 }
 
 /* =============== BACKDROP ===============*/
