@@ -88,7 +88,7 @@ img {
   color: var(--txt-bleu);
   outline: none;
 
-  transition: transform 250ms var(--timer);
+  transform: opasity;
 }
 
 .link-items:hover,
@@ -97,7 +97,7 @@ img {
 .address:hover {
   color: var(--txt-bleu);
 
-  transition: transform 250ms var(--timer);
+  transform: opasity;
 }
 
 .link-items:focus,
@@ -106,6 +106,8 @@ img {
 .address:focus {
   color: var(--txt-bleu);
   outline: 1px solid #757575;
+
+  transform: opasity;
 }
 
 /*=========== END Common ===========*/
@@ -158,6 +160,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
+
+  transition: color 250ms var(--timer);
 }
 
 .nav-listitems:not(:last-child) {
@@ -251,10 +255,14 @@ a.accent::after {
 
 .link-addres {
   color: var(--txt-light);
+
+  transition: color 250ms var(--timer);
 }
 
 .link-contact {
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms var(--timer);
 }
 
 .list-element:not(:last-child) {
@@ -336,18 +344,22 @@ a.accent::after {
   color: var(--txt-light);
   margin-top: 30px;
   padding: 10px 32px;
+
+  transition: color 250ms var(--timer);
 }
 
 .btn-hero:hover {
   color: var(--txt-dark);
   cursor: pointer;
-  transition: transform 250ms var(--timer);
+
+  transform: opasity;
 }
 
 .btn-hero:focus {
   color: var(--txt-dark);
   cursor: pointer;
-  transition: transform 250ms var(--timer);
+
+  transform: opasity;
 }
 /*=========== END hero ===========*/
 
@@ -539,12 +551,16 @@ a.accent::after {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition: background-color 250ms var(--timer);
 }
 
 .social-list-icon {
   width: 20px;
   height: 20px;
   fill: var(--light);
+
+  transition: fill 250ms var(--timer);
 }
 
 .social-list-item:not(:last-child) {
@@ -555,24 +571,24 @@ a.accent::after {
 .social-list-link:focus .social-list-icon {
   fill: var(--white);
 
-  transition: transform 250ms var(--timer);
+  transform: opasity;
 }
 
 .social-list-link:hover {
   background-color: var(--accent-background);
 
-  transition: transform 250ms var(--timer);
+  transform: opasity;
 }
 
 .social-list-link:focus {
   background-color: var(--accent-background);
   outline: 1px solid #757575;
 
-  transition: transform 250ms var(--timer);
+  transform: opasity;
 }
 
 /*==== CLIENT ====*/
-.list client {
+.list .client {
   display: flex;
 }
 
@@ -586,6 +602,8 @@ a.accent::after {
   justify-content: center;
   width: 170px;
   height: 90px;
+
+  transition: fill 250ms var(--timer);
 }
 
 .client-link {
@@ -597,26 +615,28 @@ a.accent::after {
   margin: auto;
   border: 1px solid var(--light);
   border-radius: 4px;
+
+  transition: border 250ms var(--timer);
 }
 
 .client-link:focus .client-logo-icon,
 .client-link:hover .client-logo-icon {
   fill: var(--accent-background);
 
-  transition: transform 250ms var(--timer);
+  transform: opasity;
 }
 
 .client-link:hover {
   border: 1px solid var(--accent-background);
 
-  transition: transform 250ms var(--timer);
+  transform: opasity;
 }
 
 .client-link:focus {
   border: 1px solid var(--accent-background);
   outline: 1px solid #757575;
 
-  transition: transform 250ms var(--timer);
+  transform: opasity;
 }
 
 .client-logo-icon {
@@ -661,6 +681,9 @@ a.accent::after {
   color: var(--txt-dark);
   font-weight: 500;
   padding: 6px 22px;
+
+  transition: color 250ms var(--timer);
+  transition: background-color 250ms var(--timer);
 }
 
 .btn-portfolio:hover {
@@ -669,7 +692,7 @@ a.accent::after {
   border: none;
   cursor: pointer;
 
-  transition: transform 250ms var(--timer);
+  transform: opasity;
 }
 
 .btn-portfolio:focus {
@@ -678,7 +701,7 @@ a.accent::after {
   border: none;
   outline: 1px solid #757575;
 
-  transition: transform 250ms var(--timer);
+  transform: opasity;
 }
 
 .work-example {
@@ -698,13 +721,15 @@ a.accent::after {
 
 .ecxample-card {
   display: block;
+
+  transition: all 250ms var(--timer);
 }
 
 .ecxample-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
-  transition: transform 250ms var(--timer);
+  transform: all;
 }
 
 .ecxample-card:focus {
@@ -712,7 +737,7 @@ a.accent::after {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: 1px solid #757575;
 
-  transition: transform 250ms var(--timer);
+  transform: all;
 }
 
 .portfolio-card:nth-child(3n) {
@@ -770,7 +795,7 @@ a.accent::after {
 }
 .overlay {
   position: absolute;
-  background: rgba(33, 150, 243, 0.9);
+  background-color: rgba(33, 150, 243, 0.9);
   color: var(--txt-light);
   font-style: normal;
   font-weight: normal;
@@ -789,8 +814,6 @@ a.accent::after {
 .ecxample-card:hover .overlay,
 .ecxample-card:focus .overlay {
   transform: translateY(0);
-
-  transition: transform 250ms var(--timer);
 }
 
 /* =============== BACKDROP ===============*/
