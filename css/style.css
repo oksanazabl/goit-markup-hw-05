@@ -181,6 +181,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms var(--timer);
 }
 
 .link-icon {
@@ -192,6 +194,8 @@ img {
   margin-right: 10px;
   object-fit: contain;
   object-position: center;
+
+  transition: fill 250ms var(--timer);
 }
 
 .head .nav-address {
@@ -602,8 +606,6 @@ a.accent::after {
   justify-content: center;
   width: 170px;
   height: 90px;
-
-  transition: fill 250ms var(--timer);
 }
 
 .client-link {
@@ -615,8 +617,6 @@ a.accent::after {
   margin: auto;
   border: 1px solid var(--light);
   border-radius: 4px;
-
-  transition: border 250ms var(--timer);
 }
 
 .client-link:focus .client-logo-icon,
@@ -643,6 +643,8 @@ a.accent::after {
   width: 89px;
   height: 52px;
   fill: var(--light);
+
+  transition: fill 250ms var(--timer);
 }
 
 .client-icon:not(:last-child) {
@@ -682,8 +684,8 @@ a.accent::after {
   font-weight: 500;
   padding: 6px 22px;
 
-  transition: color 250ms var(--timer);
-  transition: background-color 250ms var(--timer);
+  transition: color 1s var(--timer);
+  transition: background-color 1s var(--timer);
 }
 
 .btn-portfolio:hover {
@@ -721,23 +723,17 @@ a.accent::after {
 
 .ecxample-card {
   display: block;
-
-  transition: all 250ms var(--timer);
 }
 
 .ecxample-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
-  transform: all;
 }
 
 .ecxample-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: 1px solid #757575;
-
-  transform: all;
 }
 
 .portfolio-card:nth-child(3n) {
