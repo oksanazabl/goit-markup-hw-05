@@ -306,6 +306,18 @@ a.accent::after {
 
 .hero {
   background-color: var(--b-dark);
+
+  min-height: 600px;
+  /*
+  padding-top: 207px;
+  padding-bottom: 193px;
+  */
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero .container {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -313,17 +325,8 @@ a.accent::after {
     url(../images/main/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   min-height: 600px;
-  padding-top: 207px;
-  padding-bottom: 193px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.hero .container {
-  width: 1200px;
+  max-width: 1600px;
   padding: 0 15px;
   display: flex;
   flex-direction: column;
@@ -331,6 +334,13 @@ a.accent::after {
   margin-right: auto;
   align-items: center;
 }
+
+.hero-descr {
+  margin-top: 207px;
+  display: flex;
+  flex-direction: column;
+}
+
 .main-title {
   color: var(--txt-light);
   font-weight: 900;
