@@ -339,6 +339,7 @@ a.accent::after {
   margin-top: 207px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .main-title {
@@ -358,6 +359,10 @@ a.accent::after {
   color: var(--txt-light);
   margin-top: 30px;
   padding: 10px 32px;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  letter-spacing: 0.05em;
 
   transition: color 250ms var(--timer);
 }
